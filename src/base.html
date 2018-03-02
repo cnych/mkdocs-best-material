@@ -293,13 +293,20 @@
                 {% endblock %}
               {% endblock %}
 
+              <!-- Gicommet integration -->
+              {% block gitment %}
+                {% if (config.extra.gitment and not page.is_homepage) or
+                      (page and page.meta and page.meta.gitment) %}
+                  {% include "partials/integrations/gitment.html" %}
+                {% endif %}
+              {% endblock %}
               <!-- Disqus integration -->
-              {% block disqus %}
+              <!-- {% block disqus %}
                 {% if (config.extra.disqus and not page.is_homepage) or
                       (page and page.meta and page.meta.disqus) %}
                   {% include "partials/integrations/disqus.html" %}
                 {% endif %}
-              {% endblock %}
+              {% endblock %} -->
             </article>
           </div>
         </div>

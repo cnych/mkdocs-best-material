@@ -1,3 +1,5 @@
+tag: getting-started
+
 # Getting started
 
 ## Installation

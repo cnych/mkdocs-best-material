@@ -61,6 +61,11 @@ theme:
 
 # Customization
 extra:
+  gitment:
+    owner: cnych
+    repo: qikqiak-tdd
+    client: bdb76dbb2e9d0786e350
+    client_secret: b454b2a08013fd0e32013be7a63fa8fcb262b6c4
   social:
     - type: globe
       link: http://struct.cc
